@@ -7,7 +7,6 @@ const messages = [
     "If you say no, I will be really sad...",
     "I will be very very very sad...",
     "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
 ];
 
 let messageIndex = 0;
@@ -24,7 +23,7 @@ function handleNoClick() {
     noButton.textContent = messages[messageIndex];
     messageIndex = (messageIndex + 1) % messages.length;
     const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.5}px`;
+    yesButton.style.fontSize = `${currentSize * 1.2}px`;
 }
 
 function handleYesClick() {
